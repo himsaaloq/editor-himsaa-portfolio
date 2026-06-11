@@ -20,7 +20,7 @@ nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 8%;
+padding:12px 6%;
 position:fixed;
 width:100%;
 background:rgba(0,0,0,.4);
@@ -52,17 +52,26 @@ text-decoration:none;
 }
 
 .hero{
-height:100vh;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:20px;
+padding:160px 20px 80px;
+}
+
+.hero-content{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+margin-top:0px;
 }
 
 .hero-logo{
 width:180px;
 border-radius:50%;
+margin-top:80px;
 margin-bottom:20px;
 box-shadow:0 0 40px #d4a373;
 }
@@ -73,8 +82,8 @@ color:#d4a373;
 }
 
 .hero h2{
-height:40px;
-margin: 27px 0;
+min-height:60px;
+margin-bottom:30px;
 }
 
 .hero p{
@@ -540,7 +549,7 @@ text-decoration:none;
 }
 
 .hero{
-height:100vh;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -548,12 +557,12 @@ text-align:center;
 padding:20px;
 }
 
-.hero-logo{
+/* .hero-logo{
 width:180px;
 border-radius:50%;
 margin-bottom:20px;
 box-shadow:0 0 40px #d4a373;
-}
+} */
 
 .hero h1{
 font-size:4rem;
@@ -831,3 +840,136 @@ background:#D4A373;
 color:#050816;
 }
 
+/* SCROLL PROGRESS BAR */
+
+#progress-bar{
+position:fixed;
+top:0;
+left:0;
+width:0%;
+height:4px;
+background:#D4A373;
+z-index:999999;
+box-shadow:0 0 10px #D4A373;
+}
+
+/* HERO BADGES */
+
+.hero-badges{
+display:flex;
+justify-content:center;
+gap:10px;
+flex-wrap:wrap;
+margin:20px 0;
+margin-top:20px;
+margin-bottom:10px;}
+
+.hero-badges span{
+background:rgba(255,255,255,.08);
+padding:10px 18px;
+border-radius:30px;
+color:#D4A373;
+border:1px solid rgba(212,163,115,.3);
+transition:.3s;
+}
+
+.hero-badges span:hover{
+transform:translateY(-3px);
+box-shadow:0 0 15px #D4A373;
+}
+
+/* BACK TO TOP */
+
+#topBtn{
+position:fixed;
+bottom:100px;
+right:25px;
+display:none;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#D4A373;
+cursor:pointer;
+font-size:20px;
+z-index:999;
+transition:.3s;
+}
+
+#topBtn:hover{
+transform:scale(1.1);
+box-shadow:0 0 15px #D4A373;
+}
+
+@media (max-width:768px){
+
+.hero{
+padding-top:140px;
+}
+
+.hero-logo{
+width:140px;
+box-shadow:0 0 20px #d4a373;
+}
+
+}
+
+/* @media (max-width:768px){
+
+nav{
+padding:10px 5%;
+}
+
+.logo img{
+width:38px;
+}
+
+.logo{
+font-size:18px;
+}
+
+.hero{
+padding-top:130px;
+}
+
+.hero-logo{
+width:140px;
+box-shadow:0 0 20px #d4a373;
+} */
+
+}
+
+/* @media (max-width:768px){
+
+.hero-content{
+margin-top:140px;
+}
+
+.hero h2{
+min-height:60px;
+margin-bottom:35px;
+}
+
+.hero-badges{
+margin-top:25px;
+margin-bottom:35px;
+} */
+
+}
+
+@media (max-width:768px){
+
+.hero{
+    min-height:auto;
+    padding-top:140px;
+    padding-bottom:60px;
+}
+
+.hero-content{
+    margin-top:0px;
+}
+.hero-logo{
+    width:140px;
+}
+
+}
